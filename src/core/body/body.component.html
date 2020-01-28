@@ -95,7 +95,7 @@
                 </div>
                 <mdb-card-body>
                     <div class="row">
-                        <div class="col-lg-6 ">
+                        <div class="col-lg-5">
                             <!-- Form -->
                             <form class="text-left" style="color: #757575;">
 
@@ -124,7 +124,7 @@
                                 </div>
                             </form>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-7">
                             <div style="display: block">
                                 <canvas mdbChart [chartType]="chartType" [datasets]="chartDatasets"
                                     [labels]="chartLabels" [colors]="chartColors" [options]="chartOptions"
@@ -136,5 +136,33 @@
                     </div>
                 </mdb-card-body>
             </mdb-card>
-
+            <div class="row mt-3">
+                <div class="col-md-12">
+                    <mdb-card >
+                        <mdb-card-body style="overflow-x: auto;">
+                            <table mdbTable> 
+                                <thead >
+                                  <tr>
+                                    <th *ngFor="let head of headElements" scope="col">{{head}} </th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr mdbTableCol *ngFor="let el of elements">
+                                    <th scope="row">{{el.id}}</th>
+                                    <td>{{el.heading1}}</td>
+                                    <td>{{el.heading2}}</td>
+                                    <td>{{el.heading3}}</td>
+                                    <td>{{el.heading4}}</td>
+                                    <td>{{el.heading5}}</td>
+                                    <td>{{el.heading6}}</td>
+                                    <td>{{el.heading7}}</td>
+                                    <td>{{el.heading8}}</td>
+                                    <td>{{el.heading9}}</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </mdb-card-body>
+                    </mdb-card>
+                </div>
+            </div>
         </div>
