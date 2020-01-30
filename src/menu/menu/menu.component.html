@@ -33,15 +33,15 @@
             <!-- Collapsible link -->
             <mdb-accordion-item>
               <mdb-accordion-item-head mdbWavesEffect>
-                <mdb-icon fas icon="chevron-right"></mdb-icon> Collapsible menu
+                <mdb-icon fas icon="sign-in-alt"></mdb-icon> Users Management
               </mdb-accordion-item-head>
               <mdb-accordion-item-body>
                 <ul>
                   <li>
-                    <a href="#" mdbWavesEffect>Link 1</a>
+                    <a routerLink="/login" routerLinkActive="active" mdbWavesEffect>Log In</a>
                   </li>
                   <li>
-                    <a href="#" mdbWavesEffect>Link 2</a>
+                    <a href="#" mdbWavesEffect>Register</a>
                   </li>
                 </ul>
               </mdb-accordion-item-body>
@@ -150,7 +150,7 @@
 <!--/.Double navigation-->
 
 <!--Main Layout-->
-<main style="padding-top: 4.5rem;">
-  <app-body></app-body>
+<main style="padding-top: 4.5rem;" class="h-100">
+  <router-outlet></router-outlet>
 </main>
 <!--/Main layout-->

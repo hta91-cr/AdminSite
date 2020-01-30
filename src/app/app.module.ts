@@ -8,12 +8,14 @@ import { MenuComponent } from '../menu/menu/menu.component';
 import { MDBBootstrapModulesPro } from 'ng-uikit-pro-standard';
 import { MDBSpinningPreloader } from 'ng-uikit-pro-standard';
 import { BodyComponent } from '../core/body/body.component';
+import { LoginComponent } from '../core/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
-    BodyComponent
+    BodyComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
