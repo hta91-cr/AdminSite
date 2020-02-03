@@ -2,13 +2,13 @@
 <header>
 
   <!-- Sidebar navigation -->
-  <mdb-side-nav #sidenav class="light-blue darken-3" [fixed]="false">
+  <mdb-side-nav #sidenav class="unique-color-dark" [fixed]="false">
 
     <mdb-navbar-brand>
       <li>
-        <div class="logo-wrapper waves-light">
-          <a href="https://helberthtorres.com" target="_blank" class="align-center">
-            <img src="https://helberthtorres.com/assets/logo-white.png" style="height: 90px; ">
+        <div class="logoWrapper">
+          <a routerLink="/dashboard" routerLinkActive="active" mdbWavesEffect>
+            <img class="logo" src="../../assets/logo.png">
           </a>
         </div>
       </li>
@@ -38,10 +38,13 @@
               <mdb-accordion-item-body>
                 <ul>
                   <li>
-                    <a routerLink="/login" routerLinkActive="active" mdbWavesEffect>Log In</a>
+                    <a routerLink="/profile" routerLinkActive="active" mdbWavesEffect>Profile</a>
                   </li>
                   <li>
                     <a href="#" mdbWavesEffect>Register</a>
+                  </li>
+                  <li>
+                    <a routerLink="/login" mdbWavesEffect>Log In</a>
                   </li>
                 </ul>
               </mdb-accordion-item-body>
@@ -106,7 +109,9 @@
     <mdb-navbar-brand>
       <!-- Breadcrumb-->
       <div class="breadcrumbs breadcrumbs-non-fixed breadcrumb-dn mr-auto">
-        <p><b>Admin Site</b></p>
+        <a routerLink="/dashboard" routerLinkActive="active" mdbWavesEffect>
+          <img class="logo-nav" src="../../assets/logo-dark.png">
+        </a>
       </div>
       <!--/. Breadcrumb-->
     </mdb-navbar-brand>

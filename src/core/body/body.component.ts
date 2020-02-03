@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { IMyOptions } from 'ng-uikit-pro-standard';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { catchError, map } from "rxjs/operators";
 @Component({
   selector: 'app-body',
   templateUrl: './body.component.html',
@@ -66,7 +68,7 @@ export class BodyComponent implements OnInit {
     },
   ];
   headElements = ['ID', 'Heading', 'Heading', 'Heading', 'Heading', 'Heading', 'Heading', 'Heading', 'Heading', 'Heading'];
-  
+
 
 
   public chartOptions: any = {
@@ -78,7 +80,7 @@ export class BodyComponent implements OnInit {
   public chartClicked(e: any): void { }
   public chartHovered(e: any): void { }
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit() {
     this.optionsSelect = [
@@ -86,6 +88,7 @@ export class BodyComponent implements OnInit {
       { value: '2', label: 'Last 7 days' },
       { value: '3', label: 'Last 30 days' },
     ];
+
   }
 
   updateOnlyDatasets() {
