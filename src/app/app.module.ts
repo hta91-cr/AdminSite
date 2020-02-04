@@ -11,6 +11,7 @@ import { MDBSpinningPreloader } from 'ng-uikit-pro-standard';
 import { BodyComponent } from '../core/body/body.component';
 import { LoginComponent } from '../core/login/login.component';
 import { ProfileComponent } from '../core/profile/profile.component';
+import { NotFoundComponent } from '../core/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ProfileComponent } from '../core/profile/profile.component';
     MenuComponent,
     BodyComponent,
     LoginComponent,
-    ProfileComponent
+    ProfileComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

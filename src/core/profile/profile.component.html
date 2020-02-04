@@ -1,0 +1,74 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-5 mt-3">
+            <mdb-card cascade="true" narrower="true">
+
+                <!--Card image-->
+                <div class="view view-cascade" style="box-shadow: none;" mdbWavesEffect>
+
+                    <img src="../../assets/photo.webp" style="margin: auto;" alt="">
+                </div>
+                <!--/Card image-->
+
+                <mdb-card-body cascade="true" class="text-center">
+                    <!--Card content-->
+                    <h5 class="pink-text">
+                        Helberth Torres
+                    </h5>
+                    <!--Title-->
+                    <h4 class="card-title">CEO/Founder</h4>
+                    <!--Text-->
+                    <h5>About</h5>
+                    <mdb-card-text>
+                        Helberth Torres is a Web Developer with 5+ years of Experience... <a href="#">see more</a>
+                    </mdb-card-text>
+                </mdb-card-body>
+                <!--/.Card content-->
+
+            </mdb-card>
+        </div>
+        <div class="col-md-7 mt-3">
+            <mdb-card narrower="true" cascade="true">
+                <!--Card image-->
+                <div class="view view-cascade overlay waves-light py-3 blue darken-4 text-center text-white view-size"
+                    mdbWavesEffect>
+                    User Information
+                </div>
+                <!--/Card image-->
+                <mdb-card-body>
+                    <!-- Form -->
+                    <form class="text-center" style="color: #757575;">
+
+                        <!-- Name -->
+                        <div class="row">
+                            <div class="md-form col-md-6">
+                                <input type="text" class="form-control" mdbInput>
+                                <label>Name</label>
+                            </div>
+                            <div class="md-form col-md-6 ">
+                                <input type="text" class="form-control" mdbInput>
+                                <label>Last Name</label>
+                            </div>
+                        </div>
+                        <!-- E-mail -->
+                        <div class="md-form">
+                            <input type="email" class="form-control" mdbInput>
+                            <label>E-mail</label>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 mx-auto">
+                                <mdb-select [options]="optionsSelect" placeholder="User Role"></mdb-select>
+                            </div>
+                        </div>
+
+                        <!--Message-->
+                        <div class="md-form">
+                            <textarea type="text" class="form-control md-textarea" mdbInput></textarea>
+                            <label>Bio</label>
+                        </div>
+                    </form>
+                </mdb-card-body>
+            </mdb-card>
+        </div>
+    </div>
+</div>
