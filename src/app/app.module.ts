@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { NgwWowModule } from 'ngx-wow';
+
 import { HttpClientModule,HttpClientJsonpModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +14,7 @@ import { BodyComponent } from '../core/body/body.component';
 import { LoginComponent } from '../core/login/login.component';
 import { ProfileComponent } from '../core/profile/profile.component';
 import { NotFoundComponent } from '../core/not-found/not-found.component';
+import { RegisterComponent } from '../core/register/register.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,8 @@ import { NotFoundComponent } from '../core/not-found/not-found.component';
     BodyComponent,
     LoginComponent,
     ProfileComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -28,8 +32,8 @@ import { NotFoundComponent } from '../core/not-found/not-found.component';
     BrowserAnimationsModule,
     MDBBootstrapModulesPro.forRoot(),
     HttpClientModule,
-    HttpClientJsonpModule
-
+    HttpClientJsonpModule,
+    NgwWowModule
   ],
   providers: [MDBSpinningPreloader],
   bootstrap: [AppComponent]
